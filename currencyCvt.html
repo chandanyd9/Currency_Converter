@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="currencyCvt.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency Converter</h1>
+      <form action="">
+        <div class="amount">
+          <p>Enter Amount</p>
+          <input type="text" value="1" />
+        </div>
+        <div class="dropdown">
+          <div class="from">
+            <p>FROM</p>
+            <div class="select-container">
+              <img
+                src="https://flagsapi.com/US/flat/64.png"
+                alt=""
+                id="fromImg"
+              />
+              <select name="from" id="fromSelect" class="Myselect">
+              </select>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          <div class="to">
+            <p>TO</p>
+            <div class="select-container">
+              <img
+                src="https://flagsapi.com/IN/flat/64.png"
+                alt=""
+                id="toImg"
+              />
+              <select name="to" id="toSelect" class="Myselect">
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="msg">1 USD = 95 INR</div>
+        <button>Get Exchange Rate</button>
+      </form>
+    </div>
+    <script src="codes.js"></script>
+    <script src="currencyCvt.js"></script>
+  </body>
+</html>
